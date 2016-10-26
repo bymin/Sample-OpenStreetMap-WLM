@@ -56,15 +56,15 @@
     <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="GeoAPI, Version=1.7.4.0, Culture=neutral, PublicKeyToken=a1a0da7def465678, processorArchitecture=MSIL">
+    <Reference Include="GeoAPI">
       <HintPath>..\packages\MapSuiteDependency-GeoAPI.10.0.0\lib\net40-client\GeoAPI.dll</HintPath>
       <Private>True</Private>
     </Reference>
-    <Reference Include="NetTopologySuite, Version=1.14.0.0, Culture=neutral, PublicKeyToken=f580a05016ebada1, processorArchitecture=MSIL">
+    <Reference Include="NetTopologySuite">
       <HintPath>..\packages\MapSuiteDependency-NetTopologySuite.10.0.0\lib\net40-client\NetTopologySuite.dll</HintPath>
       <Private>True</Private>
     </Reference>
-    <Reference Include="PowerCollections, Version=1.0.0.0, Culture=neutral, PublicKeyToken=2573bf8a1bdddcd5, processorArchitecture=MSIL">
+    <Reference Include="PowerCollections">
       <HintPath>..\packages\MapSuiteDependency-NetTopologySuite.10.0.0\lib\net40-client\PowerCollections.dll</HintPath>
       <Private>True</Private>
     </Reference>
@@ -83,24 +83,12 @@
     <Reference Include="System.Drawing" />
     <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml" />
-    <Reference Include="ThinkGeo.MapSuite, Version=10.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\ThinkGeo.MapSuite.10.0.300.1\lib\net40\ThinkGeo.MapSuite.dll</HintPath>
+    <Reference Include="ThinkGeo.MapSuite">
+      <HintPath>..\packages\ThinkGeo.MapSuite.10.0.300.2\lib\net40\ThinkGeo.MapSuite.dll</HintPath>
       <Private>True</Private>
     </Reference>
-    <Reference Include="ThinkGeo.MapSuite.Layers.Background, Version=10.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\ThinkGeo.MapSuite.Layers.Background.10.0.300.1\lib\net40\ThinkGeo.MapSuite.Layers.Background.dll</HintPath>
-      <Private>True</Private>
-    </Reference>
-    <Reference Include="ThinkGeo.MapSuite.Layers.InMemory, Version=10.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\ThinkGeo.MapSuite.Layers.InMemory.10.0.300.1\lib\net40\ThinkGeo.MapSuite.Layers.InMemory.dll</HintPath>
-      <Private>True</Private>
-    </Reference>
-    <Reference Include="ThinkGeo.MapSuite.Styles.Value, Version=10.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\ThinkGeo.MapSuite.Styles.Value.10.0.300.1\lib\net40\ThinkGeo.MapSuite.Styles.Value.dll</HintPath>
-      <Private>True</Private>
-    </Reference>
-    <Reference Include="ThinkGeo.MapSuite.WinForms, Version=10.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\MapSuiteDesktopForWinForms-BareBone.10.0.300.1\lib\net40\ThinkGeo.MapSuite.WinForms.dll</HintPath>
+    <Reference Include="ThinkGeo.MapSuite.WinForms">
+      <HintPath>..\packages\MapSuiteDesktopForWinForms-BareBone.10.0.300.2\lib\net40\ThinkGeo.MapSuite.WinForms.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="WindowsBase" />
@@ -158,16 +146,7 @@
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Import Project="..\packages\MapSuiteDependency-GdalGeoRasterProjection.10.0.0.0\build\net40\MapSuiteDependency-GdalGeoRasterProjection.targets" Condition="Exists('..\packages\MapSuiteDependency-GdalGeoRasterProjection.10.0.0.0\build\net40\MapSuiteDependency-GdalGeoRasterProjection.targets')" />
-  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
-    <PropertyGroup>
-      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
-    </PropertyGroup>
-    <Error Condition="!Exists('..\packages\MapSuiteDependency-GdalGeoRasterProjection.10.0.0.0\build\net40\MapSuiteDependency-GdalGeoRasterProjection.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\MapSuiteDependency-GdalGeoRasterProjection.10.0.0.0\build\net40\MapSuiteDependency-GdalGeoRasterProjection.targets'))" />
-    <Error Condition="!Exists('..\packages\MapSuiteDependency-MicrosoftSqlServerTypes.10.0.0\build\net40\MapSuiteDependency-MicrosoftSqlServerTypes.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\MapSuiteDependency-MicrosoftSqlServerTypes.10.0.0\build\net40\MapSuiteDependency-MicrosoftSqlServerTypes.targets'))" />
-    <Error Condition="!Exists('..\packages\MapSuiteDependency-Proj4.10.0.0.0\build\net40\MapSuiteDependency-Proj4.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\MapSuiteDependency-Proj4.10.0.0.0\build\net40\MapSuiteDependency-Proj4.targets'))" />
-  </Target>
   <Import Project="..\packages\MapSuiteDependency-MicrosoftSqlServerTypes.10.0.0\build\net40\MapSuiteDependency-MicrosoftSqlServerTypes.targets" Condition="Exists('..\packages\MapSuiteDependency-MicrosoftSqlServerTypes.10.0.0\build\net40\MapSuiteDependency-MicrosoftSqlServerTypes.targets')" />
-  <Import Project="..\packages\MapSuiteDependency-Proj4.10.0.0.0\build\net40\MapSuiteDependency-Proj4.targets" Condition="Exists('..\packages\MapSuiteDependency-Proj4.10.0.0.0\build\net40\MapSuiteDependency-Proj4.targets')" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
   <Target Name="BeforeBuild">
