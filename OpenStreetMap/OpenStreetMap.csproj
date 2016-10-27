@@ -83,12 +83,12 @@
     <Reference Include="System.Drawing" />
     <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml" />
-    <Reference Include="ThinkGeo.MapSuite">
-      <HintPath>..\packages\ThinkGeo.MapSuite.10.0.300.2\lib\net40\ThinkGeo.MapSuite.dll</HintPath>
+    <Reference Include="ThinkGeo.MapSuite, Version=10.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\ThinkGeo.MapSuite.10.0.301.1\lib\net40\ThinkGeo.MapSuite.dll</HintPath>
       <Private>True</Private>
     </Reference>
-    <Reference Include="ThinkGeo.MapSuite.WinForms">
-      <HintPath>..\packages\MapSuiteDesktopForWinForms-BareBone.10.0.300.2\lib\net40\ThinkGeo.MapSuite.WinForms.dll</HintPath>
+    <Reference Include="ThinkGeo.MapSuite.WinForms, Version=10.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\MapSuiteDesktopForWinForms-BareBone.10.0.301.1\lib\net40\ThinkGeo.MapSuite.WinForms.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="WindowsBase" />
