@@ -1,5 +1,5 @@
 # OpenStreetMap Sample for WinForms
-OpenStreetMap (OSM) is a collaborative project to create free geographic data for the entire world. It can be thought of the “Free Wiki World Map”. Now, the latest version of MapSuite Desktop can support that. In order to run this project, you will need the Development Build 10.0.0.0 or later.
+OpenStreetMap (OSM) is a collaborative project to create free geographic data for the entire world. It can be thought of the “Free Wiki World Map”. Now, the latest version of MapSuite Desktop can support that. In order to run this project, you will need the development build 10.0.0.0 or later.
 
 ![Screenshot](https://raw.githubusercontent.com/howardchn/Sample-OpenStreetMap-WLM/master/OpenStreetMap/Resources/Screenshot.jpg)
 
