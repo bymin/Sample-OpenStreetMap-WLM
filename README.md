@@ -4,11 +4,12 @@ OpenStreetMap (OSM) is a collaborative project to create free geographic data fo
 ![Screenshot](https://raw.githubusercontent.com/howardchn/Sample-OpenStreetMap-WLM/master/OpenStreetMap/Resources/Screenshot.jpg)
 
 ## Using code
+
 The first thing is to set the `winformsMap.MapUnit` to `GeographyUnit.Meter`. Then you can add OpenStreetMap with the following code. 
 ```csharp
 OpenStreetMapOverlay osmOvelerlay = new OpenStreetMapOverlay();
 winformsMap.Overlays.Add(osmOvelerlay);
 ```
 
-After the Open Street Map is added to winformsMap, call `winformsMap.Refresh()` method to make it paint on the component.
+After the Open Street Map is added to winformsMap, please call `winformsMap.Refresh()` method to make it paint on the component.
 
